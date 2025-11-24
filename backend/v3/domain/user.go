@@ -53,6 +53,8 @@ type userChanges interface {
 	SetUsername(username string) database.Change
 }
 
+//go:generate mockgen -typed -package domainmock -destination ./mock/user.mock.go . UserRepository
+
 // UserRepository is the interface for the user repository.
 type UserRepository interface {
 	Repository
