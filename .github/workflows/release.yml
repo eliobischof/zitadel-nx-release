@@ -23,7 +23,7 @@ on:
 jobs:
   release:
     name: Release
-    runs-on: depot-ubuntu-22.04-16
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
