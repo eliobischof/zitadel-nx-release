@@ -15,6 +15,8 @@ export const config = {
   ],
 };
 
+// BUMP
+
 async function loadSecuritySettings(
   request: NextRequest,
 ): Promise<SecuritySettings | null> {
