@@ -43,8 +43,6 @@ jobs:
       APP_ID: ${{ secrets.APP_ID }}
       APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
     if: ${{ github.ref == 'refs/heads/main' || github.event_name == 'workflow_dispatch' }}
-    needs:
-      - lint_test_build
     with:
       go_version: "1.25"
       node_version: "22"
